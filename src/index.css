@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'YoungSerif';
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: 'YoungSerif';
+  }
+  p {
+    @apply text-WengeBrown text-base leading-6;
+    @apply font-sans;
+  }
+}
